@@ -1,1 +1,1 @@
-web:    java -jar target/InsImage-1.0-SNAPSHOT.jar
+web:    java -jar build/libs/InsImage-1.0-SNAPSHOT.jar
