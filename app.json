@@ -1,0 +1,6 @@
+{
+  "name": "insimage",
+  "description": "Help you to save ins image.",
+  "image": "heroku/java",
+  "addons": [ "heroku-postgresql" ]
+}
