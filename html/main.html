@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cooikes</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<h1>InsImage</h1>
+<div>
+    <p>input instagram share url</p>
+    <input id="url" placeholder="share url"/>
+    <button id="submit">Go!</button>
+</div>
+<script>
+    $('#submit').click(function() {
+        let url = $("#url").val()
+        $.post("/ins", {share : url} , function(result){
+            window.location.replace(result);
+        })
+    })
+
+</script>
+</body>
+</html>
