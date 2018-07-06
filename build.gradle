@@ -50,3 +50,12 @@ dependencies {
 
 task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
+
+jar {
+    baseName 'InsImage'
+    manifest {
+        attributes 'Main-Class': 'io.ktor.server.netty.DevelopmentEngine'
+    }
+
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
