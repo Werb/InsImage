@@ -1,1 +1,0 @@
-data class Share(val share: String)
